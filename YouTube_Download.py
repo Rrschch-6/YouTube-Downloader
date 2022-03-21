@@ -11,7 +11,7 @@ choice=int(input("Enter Stream Number:"))
 out_file=video_list[choice].download(loc)
 
 #for converting Audio to MP3
-# base, ext = os.path.splitext(out_file)
-# new_file = base + '.mp3'
-# os.rename(out_file, new_file)
-# print("Done")
+base, ext = os.path.splitext(out_file)
+new_file = base + '.mp3'
+os.rename(out_file, new_file)
+print("Done")
